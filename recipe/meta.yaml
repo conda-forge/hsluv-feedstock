@@ -1,5 +1,5 @@
 {% set name = "hsluv" %}
-{% set version = "0.0.2" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 437c3468c04589753804cb9514d7863befb4ce6152e4d17701100f172b86d348
+  sha256: cf7d38b68e3e21f897c3982ba509d4a5f26d3833275ff24bc40fb3268083b782
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'A Python implementation of HSLuv (revision 4).'
+  summary: A Python implementation of HSLuv (revision 4).
 
 extra:
   recipe-maintainers:
