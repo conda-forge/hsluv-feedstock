@@ -20,6 +20,8 @@ requirements:
     - pip
   run:
     - python
+    # for long_description_content_type
+    - setuptools >=38.6.0
 
 test:
   imports:
