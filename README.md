@@ -5,11 +5,9 @@ Home: https://github.com/hsluv/hsluv-python
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hsluv-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Python implementation of HSLuv (revision 4).
-
-
 
 Current build status
 ====================
