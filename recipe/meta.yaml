@@ -1,5 +1,5 @@
 {% set name = "hsluv" %}
-{% set version = "5.0.2" %}
+{% set version = "5.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ffea98b29c6a7d25a4296eed400b491c89fd89365806a0f646ede44c043727fa
+  sha256: 2586bcb61d29d76e89e563a6836df24d86939961c9657f129a59f7617de45377
 
 build:
   noarch: python
