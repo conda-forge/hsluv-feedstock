@@ -1,27 +1,25 @@
-{% set name = "hsluv" %}
 {% set version = "5.0.4" %}
 
 package:
-  name: {{ name|lower }}
+  name: hsluv
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/h/hsluv/hsluv-{{ version }}.tar.gz
   sha256: 2281f946427a882010042844a38c7bbe9e0d0aaf9d46babe46366ed6f169b72e
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools >=38.6.0
   run:
     - python >={{ python_min }}
-    # for long_description_content_type
-    - setuptools >=38.6.0
 
 test:
   requires:
